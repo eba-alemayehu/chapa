@@ -116,7 +116,7 @@ class Chapa:
         customization=None,
         headers=None,
         **kwargs,
-    ) -> dict | Response:
+    ) :
         """
         Initialize the Transaction
 
@@ -193,7 +193,7 @@ class Chapa:
         )
         return response
 
-    def verify(self, transaction: str, headers=None) -> dict | Response:
+    def verify(self, transaction: str, headers=None) :
         """Verify the transaction
 
         Args:
@@ -220,7 +220,7 @@ class Chapa:
         split_type: str,
         headers=None,
         **kwargs,
-    ) -> dict | Response:
+    ) :
         """
         Create a subaccount for split payment
 
@@ -272,7 +272,7 @@ class Chapa:
         subaccount_id: str,
         headers=None,
         **kwargs,
-    ) -> dict | Response:
+    ) :
         """
         Initialize split payment transaction
 
@@ -334,7 +334,7 @@ class Chapa:
         )
         return response
 
-    def get_banks(self, headers=None) -> dict | Response:
+    def get_banks(self, headers=None) :
         """Get the list of all banks
 
         Response:
@@ -358,7 +358,7 @@ class Chapa:
         beneficiary_name: Optional[str],
         bank_code: str,
         currency: str = "ETB",
-    ) -> dict | Response:
+    ) :
         """Initiate a Bank Transfer
 
         This section describes how to Initiate a transfer with Chapa
@@ -394,7 +394,7 @@ class Chapa:
         )
         return response
 
-    def verify_transfer(self, reference: str) -> dict | Response:
+    def verify_transfer(self, reference: str) :
         """Verify the status of a transfer
 
         This section describes how to verify the status of a transfer with Chapa
