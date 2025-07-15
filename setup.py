@@ -7,7 +7,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 version_number = os.environ.get('CHAPA_VERSION', '0.1.2')
 
 setuptools.setup(
-    name='chapa',
+    name='chapa-py9',
     version=version_number,
     author='Temkin Mengistu (Chapi)',
     author_email='chapimenge3@gmail.com',
