@@ -4,7 +4,7 @@ import os
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
-version_number = os.environ.get('CHAPA_VERSION', '0.1.4')
+version_number = os.environ.get('CHAPA_VERSION', '0.1.5')
 
 setuptools.setup(
     name='chapa-py9',
