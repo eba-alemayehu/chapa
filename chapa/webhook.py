@@ -3,7 +3,6 @@ Chapa Webhook Utilities Module
 """
 import hmac
 import hashlib
-import json
 
 
 WEBHOOKS_EVENT_DESCRIPTION = {
