@@ -45,5 +45,5 @@ def verify_webhook(secret_key: str, body: dict, chapa_signature: str) -> bool:
     Returns:
         bool: True if the request is valid, False otherwise
     """
-    signature = hmac.new(secret_key.encode(), json.dumps(body.decode('utf-8')).encode(), hashlib.sha256).hexdigest()
+    signature = hmac.new(secret_key.encode(), body, hashlib.sha256).hexdigest()
     return signature == chapa_signature
